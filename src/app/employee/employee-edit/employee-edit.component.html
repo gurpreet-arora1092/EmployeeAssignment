@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-xs-12">
+      <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-xs-12">
+            <button
+              type="submit"
+              class="btn btn-success"
+              [disabled]="!employeeForm.valid">Save</button>
+            <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="FirstName">FirstName</label>
+              <input
+                type="text"
+                id="FirstName"
+                formControlName="FirstName"
+                class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                formControlName="lastName"
+                class="form-control"
+                >
+            </div>
+          </div>
+        </div>
+       
+    
+       
+      </form>
+    </div>
+  </div>
